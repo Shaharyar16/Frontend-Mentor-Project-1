@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0%;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 550px) {
+  img {
+    width: 100%;
+  }
+  .info > h1 {
+    font-family: "Fraunces", serif;
+  }
+  .card {
+    overflow: hidden;
+    width: 90%;
+    margin: 1.5em auto;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  .main-info {
+    padding: 1.2em;
+    color: hsla(0, 0, 100%, 0.9);
+  }
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .btn,
+  .info,
+  .price {
+    margin-top: 1em;
+  }
+  .price {
+    font-family: "Fraunces", serif;
+  }
+  #price {
+    display: inline;
+    color: rgb(22, 129, 22);
+    margin-right: 1em;
+  }
+  .price {
+    display: flex;
+    align-items: center;
+  }
+  .price span {
+    text-decoration: line-through;
+  }
+
+  .btn button {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(37, 149, 37);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8em;
+    border-radius: 5px;
+  }
+  .btn button svg {
+    color: white;
+    margin-right: 0.5em;
+  }
+  .small-info {
+    line-height: 25px;
+  }
+}
+@media (min-width: 550px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+  }
+  .img {
+    background-image: url(images/image-product-desktop.jpg);
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+  .card {
+    width: 50%;
+
+    display: flex;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .price {
+    display: flex;
+    align-items: center;
+  }
+  .price,
+  h1 {
+    font-family: "Fraunces", serif;
+    margin-right: 1em;
+  }
+  .price > h1 {
+    display: inline;
+  }
+  .price span {
+    text-decoration: line-through;
+  }
+  .btn,
+  .info,
+  .price,
+  .small-info {
+    margin-top: 1em;
+  }
+  img {
+    max-width: 100%;
+    display: none;
+  }
+  .main-info {
+    width: 50%;
+    padding: 1em;
+  }
+  .btn button {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(37, 149, 37);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8em;
+    border-radius: 5px;
+  }
+  .btn button svg {
+    color: white;
+    margin-right: 0.5em;
+  }
+  .small-info {
+    line-height: 25px;
+  }
+}
+@media (min-width: 1065px) {
+  .main-info {
+    width: 100%;
+  }
+}
